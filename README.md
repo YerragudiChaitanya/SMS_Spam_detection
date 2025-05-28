@@ -90,7 +90,7 @@ Run the notebook
 Open sms_spam_detection (1).ipynb in Jupyter Notebook and run all cells.
 💼 This project is a part of my internship at CodSoft under the role of Machine Learning Intern.
 I’m always open to feedback and collaboration opportunities!
-This project is licensed under the MIT License.
+
 
 #SMSDetection #SpamClassifier #MachineLearning #CodSoftInternship #NLP #Python #MLProject #TextClassification #LinkedInProjects
 
