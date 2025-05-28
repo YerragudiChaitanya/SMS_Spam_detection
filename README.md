@@ -1,89 +1,98 @@
-# 📩 SMS Spam Detection using Machine Learning
+📩 SMS Spam Detection using Machine Learning
+This project was developed as part of my internship at CodSoft where I worked as a Machine Learning Intern. The goal was to build a robust machine learning model to classify SMS messages as spam or ham (not spam) using advanced Natural Language Processing (NLP) techniques.
 
-This project was developed as part of my internship at **CodSoft**, where I worked as a **Machine Learning Intern**. The goal was to build a machine learning model capable of detecting and classifying SMS messages as **spam** or **ham** (not spam) using natural language processing (NLP) techniques.
+🧠 Problem Statement
+SMS spam is a growing problem affecting millions of users worldwide. The objective of this project is to create an intelligent classifier that can filter out spam messages, thereby improving user experience and security.
 
----
+📊 Dataset
+Source: UCI SMS Spam Collection Dataset
 
-## 🧠 Problem Statement
+Total Messages: ~5,500
 
-SMS spam is a growing problem that affects millions of users worldwide. The objective of this project is to create an intelligent classifier that can filter out spam messages, thereby improving user experience and security.
+Classes:
 
----
+ham: Legitimate messages
 
-## 📊 Dataset
+spam: Unwanted messages
+🔧 Project Workflow
+graph LR
+    A[Data Preprocessing] --> B[Feature Extraction]
+    B --> C[Model Building]
+    C --> D[Evaluation]
+    D --> E[Prediction & Deployment]
+Step-by-Step Process
+Data Preprocessing
 
-- **Source**: [UCI SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
-- **Total Messages**: ~5,500
-- **Classes**:
-  - `ham`: Legitimate messages
-  - `spam`: Unwanted messages
+Lowercased text
 
----
+Removed punctuation and stopwords
 
-## 🔧 Project Workflow
+Tokenization and stemming
 
-### 1. **Data Preprocessing**
-- Lowercased the text
-- Removed punctuation and stopwords
-- Tokenization and stemming
+Feature Extraction
 
-### 2. **Feature Extraction**
-- Used **TF-IDF Vectorizer** to convert text into numerical features
+TF-IDF Vectorizer to convert text into numerical features
 
-### 3. **Model Building**
-- Trained several models including:
-  - Naive Bayes
-  - Support Vector Machine (SVM)
-  - Logistic Regression
+Model Building
 
-### 4. **Evaluation Metrics**
-- **Accuracy**
-- **Precision & Recall**
-- **F1-Score**
-- **Confusion Matrix**
+Trained models: Naive Bayes, SVM, Logistic Regression
 
----
+Evaluation
 
-## 🧪 Results
+Accuracy, Precision, Recall, F1-Score, Confusion Matrix
 
-| Model              | Accuracy | Precision | Recall | F1-Score |
-|-------------------|----------|-----------|--------|----------|
-| Naive Bayes        | 98.6%    | 96%       | 95%    | 95.5%    |
-| SVM                | 97.9%    | 94%       | 93%    | 93.5%    |
+Prediction & Deployment
 
-✅ **Naive Bayes** performed best due to its strength in handling text classification problems.
+Predict new/unseen messages
 
----
+(Optional) Model serialization and deployment
+Results
+Accuracy: 0.9839 (98.39%)
 
-## 📽️ Demo Video
+Classification Report:
 
-Watch the short demonstration here:  
-👉 *[Attach your compressed `spam_compressed.mp4` video here]*
+Class	Precision	Recall	F1-Score	Support
+Ham	0.98	1.00	0.99	965
+Spam	0.99	0.89	0.94	150
+✅ Naive Bayes performed best due to its strength in handling text classification problems.
 
----
+📽️ Demo Video
+👉 [Attach your compressed spam_compressed.mp4 video here]
 
-## 🧰 Technologies Used
+🧰 Technologies Used
+Python
 
-- Python
-- Pandas & NumPy
-- Scikit-learn
-- NLTK (Natural Language Toolkit)
-- Matplotlib & Seaborn
-- Jupyter Notebook
+Pandas & NumPy
 
----
+Scikit-learn
 
-## 📌 Key Learnings
+NLTK (Natural Language Toolkit)
 
-- Preprocessing text data is crucial for accurate classification
-- Naive Bayes is highly effective for NLP tasks like spam detection
-- Evaluation metrics must go beyond accuracy in imbalanced datasets
+Matplotlib & Seaborn
 
----
+Jupyter Notebook
 
-## 🔗 Connect With Me
+📌 Key Learnings
+Preprocessing text data is crucial for accurate classification
 
-> 💼 This project is a part of my internship at **CodSoft** under the role of **Machine Learning Intern**.  
-> I'm always open to feedback and collaboration opportunities!
+Naive Bayes is highly effective for NLP tasks like spam detection
+
+Evaluation metrics must go beyond accuracy in imbalanced datasets
+
+🚀 How to Run
+Clone this repository
+git clone https://github.com/YerragudiChaitanya/SMS-_Spam_detection.git
+
+Install dependencies
+pip install -r requirements.txt
+
+Run the notebook
+Open sms_spam_detection (1).ipynb in Jupyter Notebook and run all cells.
+💼 This project is a part of my internship at CodSoft under the role of Machine Learning Intern.
+I’m always open to feedback and collaboration opportunities!
+This project is licensed under the MIT License.
 
 #SMSDetection #SpamClassifier #MachineLearning #CodSoftInternship #NLP #Python #MLProject #TextClassification #LinkedInProjects
+
+
+
